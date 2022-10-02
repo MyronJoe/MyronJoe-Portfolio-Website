@@ -697,7 +697,7 @@ a:hover {
   background-color: #fff;
   padding: 2rem 1.3rem 1rem 1.3rem;
   border-radius: 5px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .service-box:hover .ico-circle {
@@ -1193,9 +1193,9 @@ footer .credits a {
     padding: 3rem;
   }
 
-  .navbar-b.navbar-trans,
-  .navbar-b.navbar-reduce {
-    padding-left: 10px;
+  .navbar-b.navbar-trans .nav-item,
+  .navbar-b.navbar-reduce .nav-item {
+    padding-right: 10px;
   }
 
   .navbar-b.navbar-trans .nav-link:before,
