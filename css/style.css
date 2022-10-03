@@ -121,6 +121,15 @@ a:hover {
   color: #1e1e1e;
   font-size: 1.1rem;
 }
+.title-ss{
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 5px !important;
+}
+.about-p, .title-s{
+  margin-bottom: 5px !important;
+  
+}
 
 /*--/ Title A /--*/
 
@@ -145,7 +154,7 @@ a:hover {
 /*--/ Title Left /--*/
 
 .title-box-2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .title-left {
@@ -158,7 +167,7 @@ a:hover {
   position: absolute;
   height: 3px;
   background-color: navy;
-  width: 100px;
+  width: 70px;
   bottom: -12px;
 }
 
@@ -305,7 +314,7 @@ a:hover {
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  /* transition: background 0.5s; */
   z-index: 11;
 }
 
@@ -640,11 +649,42 @@ a:hover {
 //--//-->   ABOUT
 ======================================*/
 
-.profile{
-  background-color: #d7ebf8;
-  padding: 2em;
+.about{
+  margin: 3em 0;
 }
-
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.about-me{
+  text-align: center;
+  margin-top: 1em;
+}
+.about-img img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.skils{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.skils li{
+  background: #1B1B1B;
+  color: #fff;
+  list-style: none;
+  padding: .2em .7em;
+  margin:3px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+/* .title-s{
+  margin-bottom: 20px;
+} */
 
 
 /*======================================
@@ -686,30 +726,6 @@ a:hover {
   color: #4e4e4e;
 }
 
-/*======================================
-//--//-->   COUNTER
-======================================*/
-
-.counter-box {
-  color: #fff;
-  text-align: center;
-}
-
-.counter-ico {
-  margin-bottom: 1rem;
-}
-
-.counter-ico .ico-circle {
-  height: 60px;
-  width: 60px;
-  line-height: 1.8;
-  box-shadow: 0 0 0 10px #d7ebf8;
-}
-
-.counter-num .counter {
-  font-size: 2rem;
-  margin-bottom: 0;
-}
 
 /*======================================
 //--//-->   PORTFOLIO
@@ -1086,6 +1102,14 @@ footer .credits a {
   .about-info{
     margin-left: 20px;
   }
+  .profile {
+    text-align: left;
+  }
+  .skils{
+    padding: 0;
+    justify-content: flex-start;
+  }
+  
 }
 
 @media (min-width: 767px) {
@@ -1153,15 +1177,33 @@ footer .credits a {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: flex-start;
   }
   .profile, .about-me {
     width: 48%;
     
   }
+  .about-me{
+    text-align: left;
+    margin-top: 0em;
+  }
+  .about-profile{
+    display: block;
+  }
+  .about-info{
+    margin: 0;
+  }
+  
 }
 @media (min-width: 992px) {
   .testimonial-box .description {
     padding: 0 8rem;
+  }
+  .about-profile{
+    display: flex;
+  }
+  .about-info{
+    margin-left: 10px;
   }
 }
 
