@@ -3,7 +3,9 @@ body {
   color: #4e4e4e;
   font-family: 'Trebuchet MS';
 }
-
+p{
+  margin-bottom: 0px !important;
+}
 h1,
 h2,
 h3,
@@ -644,6 +646,7 @@ a:hover {
 }
 
 
+
 /*======================================
 //--//-->   SERVICES
 ======================================*/
@@ -1077,6 +1080,12 @@ footer .credits a {
   .counter-box {
     margin-bottom: 1.8rem;
   }
+  .about-profile{
+    display: flex;
+  }
+  .about-info{
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: 767px) {
@@ -1096,10 +1105,7 @@ footer .credits a {
 }
 
 @media (min-width: 768px) {
-  /* .box-shadow-full {
-    padding: 2em;
-  } */
-
+  
   .navbar-b.navbar-trans .nav-item,
   .navbar-b.navbar-reduce .nav-item {
     padding-right: 10px;
@@ -1142,6 +1148,17 @@ footer .credits a {
   }
 }
 
+@media (min-width: 852px) {
+  .about_section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .profile, .about-me {
+    width: 48%;
+    
+  }
+}
 @media (min-width: 992px) {
   .testimonial-box .description {
     padding: 0 8rem;
