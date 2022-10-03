@@ -161,12 +161,24 @@ a:hover {
   font-size: 2rem;
   position: relative;
 }
+.title-left1 {
+  font-size: 2rem;
+  position: relative;
+}
 
 .title-left:before {
   content: '';
   position: absolute;
   height: 3px;
   background-color: navy;
+  width: 70px;
+  bottom: -12px;
+}
+.title-left1:before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  background-color: orange;
   width: 70px;
   bottom: -12px;
 }
@@ -682,9 +694,10 @@ a:hover {
   border-radius: 2px;
   cursor: pointer;
 }
-/* .title-s{
-  margin-bottom: 20px;
-} */
+.socials-icon{
+  margin-right: 7px;
+  font-size: large;
+}
 
 
 /*======================================
@@ -984,7 +997,8 @@ a:hover {
 }
 
 .contact-mf {
-  margin-top: 4rem;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 /*======================================
@@ -1051,46 +1065,35 @@ footer .credits a {
 //--//-->   BUTTON
 ======================================*/
 
-.button {
-  display: inline-block;
-  padding: .3rem .6rem;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-size: 1rem;
-  border-radius: .3rem;
-  border: 1px solid transparent;
-  transition: all 500ms ease;
-  cursor: pointer;
+.btnn{
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 0 1em;
+}
+.btnn:hover{
+  background-color: rgb(208, 135, 0);
 }
 
-.button:focus {
-  outline: 0;
-}
-
-.button-a {
-  background-color: navy;
-  color: #fff;
-  border-color: #d7ebf8;
-}
-
-.btn-lg {
-  padding: .5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: .3rem;
-}
 .button, .form-control{
   border-radius: 0;
+  outline: none;
+  border: none;
 }
 .form-control:focus {
   outline: 0;
   box-shadow: none;
 }
-
+.card-blog{
+  margin-bottom: 2em;
+}
+.card-img img, .work-img img{
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.work-box{
+  border-radius: 4px;
+}
 
 @media (min-width: 577px) {
   .counter-box {
@@ -1110,6 +1113,7 @@ footer .credits a {
     justify-content: flex-start;
   }
   
+  
 }
 
 @media (min-width: 767px) {
@@ -1123,9 +1127,11 @@ footer .credits a {
   }
 
   .contact-mf .box-pl2 {
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding-left: 0rem;
   }
+  
+  
 }
 
 @media (min-width: 768px) {
@@ -1170,6 +1176,7 @@ footer .credits a {
   .box-comments .list-comments .comment-author {
     font-size: 1.5rem;
   }
+  
 }
 
 @media (min-width: 852px) {
@@ -1192,6 +1199,10 @@ footer .credits a {
   }
   .about-info{
     margin: 0;
+  }
+  .contact-mf {
+    width: 70%;
+    margin: auto;
   }
   
 }
