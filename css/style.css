@@ -660,7 +660,13 @@ a:hover {
 /*======================================
 //--//-->   ABOUT
 ======================================*/
-
+.btn-primary{
+  background-color: navy !important;
+  transition: .3s ease-out !important;
+}
+.btn-primary:hover{
+  background-color: rgb(0, 0, 215) !important;
+}
 .about{
   margin: 3em 0;
 }
@@ -684,6 +690,7 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 0  !important;
 }
 .skils li{
   background: #1B1B1B;
