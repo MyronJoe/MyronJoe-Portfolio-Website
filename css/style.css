@@ -138,8 +138,8 @@ a:hover {
 }
 
 .title-a {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -206,13 +206,14 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px navy;
+  box-shadow: 0 0 0 3px white;
   transition: all 500ms ease;
+  color: white;
 }
 
 .socials .ico-circle:hover {
-  background-color: navy;
-  color: #fff;
+  background-color: white;
+  color: navy;
   box-shadow: 0 0 0 3px #d7ebf8;
   transition: all 500ms ease;
 }
@@ -700,6 +701,7 @@ a:hover {
   margin:3px;
   border-radius: 2px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .socials-icon{
   margin-right: 7px;
@@ -847,16 +849,6 @@ a:hover {
 
 .card-blog .card-description {
   color: #4e4e4e;
-}
-
-.card-blog .post-author {
-  display: inline-block;
-}
-
-.card-blog .post-date {
-  color: #4e4e4e;
-  display: inline-block;
-  float: right;
 }
 
 /*======================================
