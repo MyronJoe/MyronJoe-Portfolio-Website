@@ -3,9 +3,11 @@ body {
   color: #4e4e4e;
   font-family: 'Trebuchet MS';
 }
-p{
+
+p {
   margin-bottom: 0px !important;
 }
+
 h1,
 h2,
 h3,
@@ -121,14 +123,17 @@ a:hover {
   color: #1e1e1e;
   font-size: 1.1rem;
 }
-.title-ss{
+
+.title-ss {
   font-weight: 900;
   font-size: 25px;
   margin-bottom: 5px !important;
 }
-.about-p, .title-s{
+
+.about-p,
+.title-s {
   margin-bottom: 5px !important;
-  
+
 }
 
 /*--/ Title A /--*/
@@ -161,6 +166,7 @@ a:hover {
   font-size: 2rem;
   position: relative;
 }
+
 .title-left1 {
   font-size: 2rem;
   position: relative;
@@ -174,6 +180,7 @@ a:hover {
   width: 70px;
   bottom: -12px;
 }
+
 .title-left1:before {
   content: '';
   position: absolute;
@@ -427,12 +434,13 @@ a:hover {
   height: 2px;
   transition: all 500ms ease;
 }
-.navbar-b.navbar-trans .show > .nav-link:before,
-.navbar-b.navbar-trans .active > .nav-link:before,
+
+.navbar-b.navbar-trans .show>.nav-link:before,
+.navbar-b.navbar-trans .active>.nav-link:before,
 .navbar-b.navbar-trans .nav-link.show:before,
 .navbar-b.navbar-trans .nav-link.active:before,
-.navbar-b.navbar-reduce .show > .nav-link:before,
-.navbar-b.navbar-reduce .active > .nav-link:before,
+.navbar-b.navbar-reduce .show>.nav-link:before,
+.navbar-b.navbar-reduce .active>.nav-link:before,
 .navbar-b.navbar-reduce .nav-link.show:before,
 .navbar-b.navbar-reduce .nav-link.active:before {
   width: 35px;
@@ -457,8 +465,8 @@ a:hover {
   color: #fff;
 }
 
-.navbar-b.navbar-trans .show > .nav-link,
-.navbar-b.navbar-trans .active > .nav-link,
+.navbar-b.navbar-trans .show>.nav-link,
+.navbar-b.navbar-trans .active>.nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
   color: #fff;
@@ -483,8 +491,8 @@ a:hover {
   color: navy;
 }
 
-.navbar-b.navbar-reduce .show > .nav-link,
-.navbar-b.navbar-reduce .active > .nav-link,
+.navbar-b.navbar-reduce .show>.nav-link,
+.navbar-b.navbar-reduce .active>.nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
   color: navy;
@@ -661,49 +669,57 @@ a:hover {
 /*======================================
 //--//-->   ABOUT
 ======================================*/
-.btn-primary{
+.btn-primary {
   background-color: #1B1B1B !important;
   transition: .3s ease-out !important;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
   background-color: navy !important;
 }
-.about{
+
+.about {
   margin: 3em 0;
 }
+
 .profile {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
-.about-me{
+
+.about-me {
   text-align: center;
   margin-top: 1em;
 }
-.about-img img{
+
+.about-img img {
   height: 150px;
   width: 150px;
   object-fit: cover;
   margin-bottom: 15px;
 }
-.skils{
+
+.skils {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0  !important;
+  padding: 0 !important;
 }
-.skils li{
+
+.skils li {
   background: #1B1B1B;
   color: #fff;
   list-style: none;
   padding: .2em .7em;
-  margin:3px;
+  margin: 3px;
   border-radius: 2px;
   cursor: pointer;
   text-transform: uppercase;
 }
-.socials-icon{
+
+.socials-icon {
   margin-right: 7px;
   font-size: large;
 }
@@ -1064,33 +1080,40 @@ footer .credits a {
 //--//-->   BUTTON
 ======================================*/
 
-.btnn{
+.btnn {
   background-color: orange;
   color: white;
   border: none;
   padding: 0 1em;
 }
-.btnn:hover{
+
+.btnn:hover {
   background-color: rgb(208, 135, 0);
 }
 
-.button, .form-control{
+.button,
+.form-control {
   border-radius: 0;
   outline: none;
   border: none;
 }
+
 .form-control:focus {
   outline: 0;
   box-shadow: none;
 }
-.card-blog{
+
+.card-blog {
   margin-bottom: 2em;
 }
-.card-img img, .work-img img{
+
+.card-img img,
+.work-img img {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-.work-box{
+
+.work-box {
   border-radius: 4px;
 }
 
@@ -1098,21 +1121,25 @@ footer .credits a {
   .counter-box {
     margin-bottom: 1.8rem;
   }
-  .about-profile{
+
+  .about-profile {
     display: flex;
   }
-  .about-info{
+
+  .about-info {
     margin-left: 20px;
   }
+
   .profile {
     text-align: left;
   }
-  .skils{
+
+  .skils {
     padding: 0;
     justify-content: flex-start;
   }
-  
-  
+
+
 }
 
 @media (min-width: 767px) {
@@ -1129,12 +1156,12 @@ footer .credits a {
     margin-top: 2rem;
     padding-left: 0rem;
   }
-  
-  
+
+
 }
 
 @media (min-width: 768px) {
-  
+
   .navbar-b.navbar-trans .nav-item,
   .navbar-b.navbar-reduce .nav-item {
     padding-right: 10px;
@@ -1175,44 +1202,53 @@ footer .credits a {
   .box-comments .list-comments .comment-author {
     font-size: 1.5rem;
   }
-  
+
 }
 
 @media (min-width: 852px) {
-  .about_section{
+  .about_section {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: flex-start;
   }
-  .profile, .about-me {
+
+  .profile,
+  .about-me {
     width: 48%;
-    
+
   }
-  .about-me{
+
+  .about-me {
     text-align: left;
     margin-top: 0em;
   }
-  .about-profile{
+
+  .about-profile {
     display: block;
   }
-  .about-info{
+
+  .about-info {
     margin: 0;
   }
+
   .contact-mf {
     width: 70%;
     margin: auto;
   }
-  
+
 }
+
 @media (min-width: 992px) {
   .testimonial-box .description {
     padding: 0 8rem;
   }
-  .about-profile{
+
+  .about-profile {
     display: flex;
   }
-  .about-info{
+
+  .about-info {
     margin-left: 10px;
   }
 }
