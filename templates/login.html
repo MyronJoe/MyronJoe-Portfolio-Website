@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <!--/ Section Contact-Footer Star /-->
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route pb-4"
+      style="background-image: url(../static/img/blog-4.jpg); height: 76.3vh">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="contact-mf" >
+          <div class="box-shadow-full" id="contact">
+            <div class="title-box-2">
+              <h5 class="title-left1 text-light">
+                Login
+              </h5>
+            </div>
+            <div>
+              <form action=""  method="POST" >
+                {{ form.hidden_tag() }}
+                <div class="row">
+                  <div class="col-md-12 mb-2">
+                    <div class="form-group">
+                      {{ form.email(class="form-control", placeholder="Your Email") }}
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 mb-2">
+                    <div class="form-group">
+                      {{ form.password(class="form-control", placeholder="Enter Password") }}
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    {{ form.submit(class="btnn py-2") }}
+                  </div>
+                  <div class="col-md-12 px-3 pt-2">
+                    <small class="sm-white">Do Not Have An Account? <a href="{{ url_for('register') }}" class="sm-white" style="font-size: 15px">Sing Up</a> </small>
+                  </div>
+                </div>
+              </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!--/ Section Contact-footer End /-->
+{% endblock %}

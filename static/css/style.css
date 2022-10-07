@@ -3,7 +3,16 @@ body {
   color: #4e4e4e;
   font-family: 'Trebuchet MS';
 }
-
+.sm-white{
+  color: white !important;
+  opacity: 1 !important;
+}
+.sect-mt4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 p {
   margin-bottom: 0px !important;
 }
