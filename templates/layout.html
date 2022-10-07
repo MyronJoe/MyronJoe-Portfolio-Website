@@ -67,13 +67,24 @@
             <a class="nav-link js-scroll" href="/#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="{{ url_for('register') }}">Sing Up</a>
+            <a class="nav-link js-scroll" href="{{ url_for('login') }}">Login</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!--/ Nav End /-->
+    <div class="container flash">
+      {% with messages = get_flashed_messages(with_categories = true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+      {% endwith %}
+    </div>
       {% block body %} {% endblock %}
   <!--/Footer start/-->
 <footer>

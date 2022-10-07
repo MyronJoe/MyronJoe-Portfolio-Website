@@ -13,6 +13,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+.flash{
+  padding: 1em;
+  position: absolute;
+  z-index: 500;
+  top: 70px;
+  left: 0;
+  right: 0;
+}
 p {
   margin-bottom: 0px !important;
 }
