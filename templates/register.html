@@ -14,12 +14,21 @@
               </h5>
             </div>
             <div>
-              <form action=""  method="POST" >
+              <form action=""  method="POST" novalidate>
                 {{ form.hidden_tag() }}
                 <div class="row">
                   <div class="col-md-12 mb-2">
                     <div class="form-group">
-                      {{ form.username(class="form-control", placeholder="Username") }}
+                        {% if form.username.errors %}
+                            {{ form.username(class="form-control is-invalid", placeholder="Username") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.username.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                             {{ form.username(class="form-control", placeholder="Username") }}
+                        {% endif %}
                     </div>
                   </div>
 
