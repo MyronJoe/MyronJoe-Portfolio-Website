@@ -21,27 +21,27 @@ class User(db.Model):
         return f"user('{self.username}', '{self.email}','{self.image_file}')"
 
 
-# class Post(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     title = db.Column(db.String(50), nullable=False)
-#     date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-#     content = db.Column(db.Text, nullable=False)
-#     post_image = db.Column(db.String(120), nullable=False, default='default.jpg')
-#     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
-#
-#     def __repr__(self):
-#         return f"Post('{self.title}', '{self.date_posted}')"
+class Post(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(50), nullable=False)
+    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    content = db.Column(db.Text, nullable=False)
+    post_image = db.Column(db.String(120), nullable=False, default='default.jpg')
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+
+    def __repr__(self):
+        return f"Post('{self.title}', '{self.date_posted}')"
 
 
-# class Message(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     sender_name = db.Column(db.String(20), nullable=False)
-#     email = db.Column(db.String(120), nullable=False)
-#     info = db.Column(db.Text, nullable=False)
-#     date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-#
-#     def __repr__(self):
-#         return f"Post('{self.sender_name}', '{self.date_posted}')"
+class Message(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    sender_name = db.Column(db.String(20), nullable=False)
+    email = db.Column(db.String(120), nullable=False)
+    info = db.Column(db.Text, nullable=False)
+    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+
+    def __repr__(self):
+        return f"Post('{self.sender_name}', '{self.date_posted}')"
 
 
 @app.route('/')
