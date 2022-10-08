@@ -3,7 +3,7 @@
 {% block body %}
     <!--/ Section Contact-Footer Star /-->
     <section class="paralax-mf footer-paralax bg-image sect-mt4 route pb-4"
-      style="background-image: url(../static/img/blog-4.jpg); height: 76.3vh">
+      style="background-image: url(../static/img/blog-4.jpg); height: 80vh">
       <div class="overlay-mf"></div>
       <div class="container">
         <div class="contact-mf" >
@@ -34,21 +34,49 @@
 
                   <div class="col-md-12 mb-2">
                     <div class="form-group">
-                      {{ form.email(class="form-control", placeholder="Your Email") }}
+                        {% if form.email.errors %}
+                            {{ form.email(class="form-control is-invalid", placeholder="Your Email") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.email.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                             {{ form.email(class="form-control", placeholder="Your Email") }}
+                        {% endif %}
                     </div>
                   </div>
 
                   <div class="col-md-12 mb-2">
                     <div class="form-group">
-                      {{ form.password(class="form-control", placeholder="Enter Password") }}
+                        {% if form.password.errors %}
+                            {{ form.password(class="form-control is-invalid", placeholder="Enter Password") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.password.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                             {{ form.password(class="form-control", placeholder="Enter Password") }}
+                        {% endif %}
                     </div>
                   </div>
 
                   <div class="col-md-12 mb-2">
                     <div class="form-group">
-                      {{ form.confirm_password(class="form-control", placeholder="Confirm Your Password") }}
+                        {% if form.confirm_password.errors %}
+                            {{ form.confirm_password(class="form-control is-invalid", placeholder="Confirm Your Password") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.confirm_password.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                             {{ form.confirm_password(class="form-control", placeholder="Confirm Your Password") }}
+                        {% endif %}
                     </div>
                   </div>
+
                   <div class="col-md-12">
                     {{ form.submit(class="btnn py-2") }}
                   </div>
