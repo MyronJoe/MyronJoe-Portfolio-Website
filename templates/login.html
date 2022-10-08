@@ -33,7 +33,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-12 mb-2">
+                  <div class="col-md-12 mb-1">
                     <div class="form-group">
                         {% if form.password.errors %}
                             {{ form.password(class="form-control is-invalid", placeholder="Confirm Your Password") }}
@@ -47,11 +47,17 @@
                         {% endif %}
                     </div>
                   </div>
-
+                    <div class="col-md-12 ml-4 mb-2">
+                        {{ form.remember(class="form-check-input ") }}
+                        {{ form.remember.label(class="form-check-label") }}
+                    </div>
                   <div class="col-md-12">
                     {{ form.submit(class="btnn py-2") }}
                   </div>
-                  <div class="col-md-12 px-3 pt-2">
+                    <div class="col-md-12 mt-2">
+                        <small ><a class="sm-white" href="">Forgot Password?</a></small>
+                    </div>
+                  <div class="col-md-12 px-3">
                     <small class="sm-white">Do Not Have An Account? <a href="{{ url_for('register') }}" class="sm-white" style="font-size: 15px">Sing up</a> </small>
                   </div>
                 </div>
