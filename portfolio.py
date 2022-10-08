@@ -1,11 +1,11 @@
 from datetime import datetime
+from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, render_template, url_for, redirect, flash
 from forms import RegistrationForm, LoginForm
-from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '34572773a493b3a41f6a6f251dda0c73'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///post.db'
+app.config['SECRET_KEY'] = '3c33b8874083c78b15cf465c32973cad'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 
 
