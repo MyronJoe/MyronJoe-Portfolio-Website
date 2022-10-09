@@ -58,7 +58,7 @@
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/ProgramData/Microsoft/Windows/Start Menu/Programs/Git/Git CMD.lnk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Flask App Blogpost" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -179,7 +179,7 @@
       <workItem from="1665218466891" duration="1778000" />
       <workItem from="1665220301834" duration="4530000" />
       <workItem from="1665290010195" duration="47000" />
-      <workItem from="1665290098346" duration="8210000" />
+      <workItem from="1665290098346" duration="12098000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1665026003494</created>
@@ -258,7 +258,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyronJoe_Portfolio$app.coverage" NAME="app Coverage Results" MODIFIED="1665218993550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.7" />
-    <SUITE FILE_PATH="coverage/MyronJoe_Portfolio$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1665301882410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/MyronJoe_Portfolio$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1665325852156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/MyronJoe_Portfolio$MyronJoe_Portfolio.coverage" NAME="MyronJoe-Portfolio Coverage Results" MODIFIED="1665299208280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
