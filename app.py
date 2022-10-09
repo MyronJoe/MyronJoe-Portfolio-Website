@@ -3,10 +3,14 @@ from flask import Flask, render_template, url_for, redirect, flash
 from forms import RegistrationForm, LoginForm
 from flask_sqlalchemy import SQLAlchemy
 
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '3c33b8874083c78b15cf465c32973cad'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///portfolio.db"
 db = SQLAlchemy(app)
+
+with app.app_context():
+    db.create_all()
 
 
 class User(db.Model):
@@ -19,7 +23,6 @@ class User(db.Model):
 
     def __repr__(self):
         return f"user('{self.username}', '{self.email}','{self.image_file}')"
-
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
