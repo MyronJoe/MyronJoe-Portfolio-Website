@@ -1,16 +1,5 @@
 from datetime import datetime
-from flask import Flask, render_template, url_for, redirect, flash
-from forms import RegistrationForm, LoginForm
-from flask_sqlalchemy import SQLAlchemy
-
-
-app = Flask(__name__)
-app.config['SECRET_KEY'] = '3c33b8874083c78b15cf465c32973cad'
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///portfolio.db"
-db = SQLAlchemy(app)
-
-with app.app_context():
-    db.create_all()
+from app import db
 
 
 class User(db.Model):
@@ -45,33 +34,3 @@ class Message(db.Model):
 
     def __repr__(self):
         return f"Post('{self.sender_name}', '{self.date_posted}')"
-
-
-@app.route('/')
-def home():
-    return render_template('index.html', title='Home')
-
-
-@app.route('/register', methods=['GET', 'POST'])
-def register():
-    form = RegistrationForm()
-    if form.validate_on_submit():
-        flash(f'Account created for {form.username.data}!', 'success')
-        return redirect(url_for('home'))
-    return render_template('register.html', title='Register', form=form)
-
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    form = LoginForm()
-    if form.validate_on_submit():
-        if form.email.data == 'myron@gmail.com' and form.password.data == '1234':
-            flash('Login Successful!', 'success')
-            return redirect(url_for('home'))
-        else:
-            flash('Login failed check Username and Password', 'danger')
-    return render_template('login.html', title='Login', form=form)
-
-
-if __name__ == '__main__':
-    app.run(debug=True)

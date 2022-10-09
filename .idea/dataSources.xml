@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="portfolio.db" uuid="68bd044d-e110-4d5b-b8d4-ab3a7db96db6">
+    <data-source source="LOCAL" name="portfolio" uuid="d1d09002-3c04-409f-a2b6-1dc5badf12f6">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/portfolio.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/app/portfolio.db</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>
