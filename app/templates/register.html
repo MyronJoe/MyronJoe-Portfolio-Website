@@ -1,95 +1,96 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-    <!--/ Section Contact-Footer Star /-->
-    <section class="paralax-mf footer-paralax bg-image sect-mt4 route pb-4"
-      style="background-image: url(../static/img/blog-4.jpg); height: 80vh">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="contact-mf" >
-          <div class="box-shadow-full" id="contact">
-            <div class="title-box-2">
-              <h5 class="title-left1 text-light">
-                Register
-              </h5>
-            </div>
-            <div>
-              <form action=""  method="POST" novalidate>
-                {{ form.hidden_tag() }}
-                <div class="row">
-                  <div class="col-md-12 mb-2">
-                    <div class="form-group">
-                        {% if form.username.errors %}
-                            {{ form.username(class="form-control is-invalid", placeholder="Username") }}
-                            <div class="invalid-feedback">
-                                {% for error in form.username.errors %}
-                                    <span>{{ error }}</span>
-                                {% endfor %}
-                            </div>
-                        {% else %}
-                             {{ form.username(class="form-control", placeholder="Username") }}
-                        {% endif %}
-                    </div>
+<!--/ Section Contact-Footer Star /-->
+<section class="paralax-mf footer-paralax bg-image sect-mt4 route pb-4"
+  style="background-image: url(../static/img/blog-4.jpg); height: 80vh">
+  <div class="overlay-mf"></div>
+  <div class="container">
+    <div class="contact-mf">
+      <div class="box-shadow-full" id="contact">
+        <div class="title-box-2">
+          <h5 class="title-left1 text-light">
+            Register
+          </h5>
+        </div>
+        <div>
+          <form action="" method="POST" novalidate>
+            {{ form.hidden_tag() }}
+            <div class="row">
+              <div class="col-md-12 mb-2">
+                <div class="form-group">
+                  {% if form.username.errors %}
+                  {{ form.username(class="form-control is-invalid", placeholder="Username") }}
+                  <div class="invalid-feedback">
+                    {% for error in form.username.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
                   </div>
-
-                  <div class="col-md-12 mb-2">
-                    <div class="form-group">
-                        {% if form.email.errors %}
-                            {{ form.email(class="form-control is-invalid", placeholder="Your Email") }}
-                            <div class="invalid-feedback">
-                                {% for error in form.email.errors %}
-                                    <span>{{ error }}</span>
-                                {% endfor %}
-                            </div>
-                        {% else %}
-                             {{ form.email(class="form-control", placeholder="Your Email") }}
-                        {% endif %}
-                    </div>
-                  </div>
-
-                  <div class="col-md-12 mb-2">
-                    <div class="form-group">
-                        {% if form.password.errors %}
-                            {{ form.password(class="form-control is-invalid", placeholder="Enter Password") }}
-                            <div class="invalid-feedback">
-                                {% for error in form.password.errors %}
-                                    <span>{{ error }}</span>
-                                {% endfor %}
-                            </div>
-                        {% else %}
-                             {{ form.password(class="form-control", placeholder="Enter Password") }}
-                        {% endif %}
-                    </div>
-                  </div>
-
-                  <div class="col-md-12 mb-2">
-                    <div class="form-group">
-                        {% if form.confirm_password.errors %}
-                            {{ form.confirm_password(class="form-control is-invalid", placeholder="Confirm Your Password") }}
-                            <div class="invalid-feedback">
-                                {% for error in form.confirm_password.errors %}
-                                    <span>{{ error }}</span>
-                                {% endfor %}
-                            </div>
-                        {% else %}
-                             {{ form.confirm_password(class="form-control", placeholder="Confirm Your Password") }}
-                        {% endif %}
-                    </div>
-                  </div>
-
-                  <div class="col-md-12">
-                    {{ form.submit(class="btnn py-2") }}
-                  </div>
-                  <div class="col-md-12 px-3 pt-2">
-                    <small class="sm-white">Already Have An Account? <a href="{{ url_for('login') }}" class="sm-white" style="font-size: 15px">Sing in</a> </small>
-                  </div>
+                  {% else %}
+                  {{ form.username(class="form-control", placeholder="Username") }}
+                  {% endif %}
                 </div>
-              </form>
+              </div>
+
+              <div class="col-md-12 mb-2">
+                <div class="form-group">
+                  {% if form.email.errors %}
+                  {{ form.email(class="form-control is-invalid", placeholder="Your Email") }}
+                  <div class="invalid-feedback">
+                    {% for error in form.email.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                  </div>
+                  {% else %}
+                  {{ form.email(class="form-control", placeholder="Your Email") }}
+                  {% endif %}
                 </div>
+              </div>
+
+              <div class="col-md-12 mb-2">
+                <div class="form-group">
+                  {% if form.password.errors %}
+                  {{ form.password(class="form-control is-invalid", placeholder="Enter Password") }}
+                  <div class="invalid-feedback">
+                    {% for error in form.password.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                  </div>
+                  {% else %}
+                  {{ form.password(class="form-control", placeholder="Enter Password") }}
+                  {% endif %}
+                </div>
+              </div>
+
+              <div class="col-md-12 mb-2">
+                <div class="form-group">
+                  {% if form.confirm_password.errors %}
+                  {{ form.confirm_password(class="form-control is-invalid", placeholder="Confirm Your Password") }}
+                  <div class="invalid-feedback">
+                    {% for error in form.confirm_password.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                  </div>
+                  {% else %}
+                  {{ form.confirm_password(class="form-control", placeholder="Confirm Your Password") }}
+                  {% endif %}
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                {{ form.submit(class="btnn py-2") }}
+              </div>
+              <div class="col-md-12 px-3 pt-2">
+                <small class="sm-white">Already Have An Account? <a href="{{ url_for('login') }}" class="sm-white"
+                    style="font-size: 15px">Sing in</a> </small>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
-    </section>
-  <!--/ Section Contact-footer End /-->
+    </div>
+  </div>
+  </div>
+</section>
+<!--/ Section Contact-footer End /-->
 {% endblock %}
