@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   {% if title %}
-    <title>Myron-Joe-Portfolio-{{ title }}</title>
+  <title>Myron-Joe-Portfolio-{{ title }}</title>
   {% else %}
-    <title>Myron-Joe-Portfolio</title>
+  <title>Myron-Joe-Portfolio</title>
   {% endif %}
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
@@ -40,8 +40,8 @@
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll" href="{{ url_for('home') }}">KamTech</a>
-      <button aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
-        data-target="#navbarDefault" data-toggle="collapse" type="button">
+      <button aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation"
+        class="navbar-toggler collapsed" data-target="#navbarDefault" data-toggle="collapse" type="button">
         <span></span>
         <span></span>
         <span></span>
@@ -74,45 +74,45 @@
     </div>
   </nav>
   <!--/ Nav End /-->
-    <div class="container flash">
-      {% with messages = get_flashed_messages(with_categories = true) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                <div class="alert alert-{{ category }}">
-                    {{ message }}
-                </div>
-            {% endfor %}
-        {% endif %}
-      {% endwith %}
+  <div class="container flash">
+    {% with messages = get_flashed_messages(with_categories = true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{ category }}">
+      {{ message }}
     </div>
-      {% block body %} {% endblock %}
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+  </div>
+  {% block body %} {% endblock %}
   <!--/Footer start/-->
-<footer>
-  <div class="container-fluid bg-dark pb-2">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="socials">
-          <ul>
-            <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-            <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li> -->
-            <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-            <li><a href=""><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-            <li><a href=""><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
-          </ul>
-        </div>
-        <div class="copyright-box">
-          <p class="copyright">&copy; Copyright <strong>KamTech</strong>. All Rights Reserved</p>
-          <div class="credits">
-            Designed by <a href="#">Kam-Tech</a>
+  <footer>
+    <div class="container-fluid bg-dark pb-2">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="socials">
+            <ul>
+              <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+              <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li> -->
+              <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+              <li><a href=""><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+              <li><a href=""><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
+            </ul>
           </div>
-        </div>
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>KamTech</strong>. All Rights Reserved</p>
+            <div class="credits">
+              Designed by <a href="#">Kam-Tech</a>
+            </div>
+          </div>
 
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<a class="back-to-top" href="#"><i class="fa fa-chevron-up"></i></a>
+  <a class="back-to-top" href="#"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
 
   <!-- JavaScript Libraries -->
